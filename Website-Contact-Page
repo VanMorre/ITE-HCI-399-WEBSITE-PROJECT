@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <title>ALWAYS COFFEE</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            color: #222;
+            padding-bottom: 50px;
+            overflow: hidden;
+            background-color:#222;
+           
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .nav{
+            background-color: #272927;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        .nav .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            transition: all 0.3s ease-in-out;
+        }
+        h1.logo a{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .nav ul{
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav a{
+            color:white;
+            text-decoration: none;
+            padding: 7px 15px;
+            transition: all 0.3s ease-in-out;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .nav.active{
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgb(0, 0,0,0.3);
+        }
+        .nav.active a{
+            color: white;
+        }
+        .nav.nav.active .container{
+            padding: 10px 0;
+        }
+        .nav a.current,
+        .nav a:hover{
+            color:#64b3f4;
+            box-sizing: border-box;
+            border: 2px solid whitesmoke;
+            border-radius: 20px; 
+        }
+        .hero{
+            background-image: url(image/contactpagebg.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            height: 30vh;
+            color:black;
+            display: flex;
+            justify-content: center;
+            text-align: left;
+            position: relative;
+            margin-top: 20px;
+            z-index: -2 !important;
+        }
+        .hero::before{
+            content: '';
+            position: fixed;
+            top: 50;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0,0, 0,5);
+            z-index: -1; 
+        }
+        .hero h2{  
+            font-size: 60px;
+            margin-top: 90px;
+            margin-right: 880px;
+            
+        }
+        .hero p{
+            font-size:30px;
+            width: 90%;
+            margin-left: 10px;
+            margin-top: 3px;
+            letter-spacing: 1px;
+        }
+        
+
+        
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logopic{         
+            display: flex;
+            margin-top: 60px;
+            margin-left: 165px;
+            color:black;
+          
+        }
+        .logosma{
+            margin-left: 185px;
+            text-align: center;
+               
+        }
+        .logosma:hover{
+            opacity: 0.7;
+        }
+        .socialmedianame{
+            color: whitesmoke;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .outer-footer{
+        line-height:30px;
+        padding:30px;
+        text-align: center;
+        color: #272927;
+        font-size: 18px;
+        background-color: #7bccec;
+        padding-top: 50px;
+        margin-top: 150px;
+        }
+
+              
+    </style>
+</head>
+    <body>
+
+        <div class="nav">
+            <div class="container">
+                <h1 class="logo"><a href="landingpage.html">ALWAYS COFFEE</a></h1>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#"class="current">Contact</a></li>
+                    <li><a href="aboutpage.html">About</a></li>
+                    <li><a href="teampage.html">Team</a></li>
+                    
+                </ul>
+            </div>
+       </div>
+
+       <div class="hero">
+            <div class="comtainer">
+                <h2>Contact us</h2>
+                <p>Visit your social media accounts.<a href=""></a></p>
+            </div>
+       </div>
+
+       <section>
+
+        <div class="logopic">
+            <div class="logosma">
+                <a href="https://www.facebook.com/profile.php?id=100089853752819" target="_blank"> <img src="image/Facebook_logo.png" alt="Facebook logo" width="150" height="150"></a> 
+                <div class="socialmedianame">Facebook</div>    
+            </div>
+            
+            <div class="logosma">
+                <a href="https://goo.gl/maps/purSwzbSsBfFrbqf6" target="_blank"> <img src="image/Google_Maps-removebg-preview.png" alt="maps logo" width="150" height="150"></a>
+                <div class="socialmedianame">Maps</div>  
+            </div>
+
+            <div class="logosma">
+                <a href="https://www.instagram.com/always.coffeeph/" target="_blank"> <img src="image/instagram logo.png" alt="Instagram logo" width="150" height="150"></a>
+                <div class="socialmedianame">Instagram</div>  
+            </div>
+           
+            
+        </div>
+       </section>
+    
+       <div class="outer-footer">
+          Copyright &copy; All rights Reserved
+      </div>
+
+    </body>
+</html>
